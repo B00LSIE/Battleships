@@ -104,8 +104,8 @@ def customPlace_battleships(board : list, filename, filenameJson):
     for name, size in battleships.items():
         coords = shipData.get(name)
 
-        print("Placing " , name , " at " , coords ,  " on the board.")
-        print("Coords variable: " , coords)
+        print(f"Placing {name} at {coords} on the board.")
+        print(f"Coords variable: {coords}")
 
         if coords:
             x = int(coords[1])
@@ -146,4 +146,3 @@ def checkBoard(battleships : dict):
         return True
     else:
         return False
-    
